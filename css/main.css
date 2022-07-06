@@ -42,13 +42,13 @@ h3 {
 
 p {
 	font-size: 0.875em;
-	line-height: 21px;
+	line-height: auto;
     padding: 0 30px;
 }
 
 /*The widths are in a percentage!*/
 header {
-	height: 110px;
+	height: auto;
 	border-bottom: 3px solid #77a466;
 	max-width: 1200px;
 	width: 90%;
@@ -79,7 +79,7 @@ header nav ul li {
 	font-weight: 700;
 	font-size: 0.875em;
 	padding: 0 10px;
-	display: inline;
+	display: flex;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -119,15 +119,16 @@ header nav ul li a{
 .main-title p {
 	padding: 0;
 	font-size: 1em;
-	line-height: 25px;
+	line-height: auto;
 }
 
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
-	height: 250px;
+	width: 90%;
+	height: auto;
 	border-top: 1px solid #eee;
+	display: wrap;
 }
 
 .section-one h3 {
@@ -156,12 +157,12 @@ header nav ul li a{
 .reviews {
 	color: #333;
 	font-size: 1em;
-	line-height: 21px;
+	line-height: auto;
 }
 
 .address {
 	font-size: 1em;
-	line-height: 24px;
+	line-height: auto;
 }
 
 /*The widths are in a percentage!*/
@@ -181,4 +182,14 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 14px;
+}
+
+@media only screen and (min-width 768px){
+
+
+}
+
+
+@media only screen and (min-width 1000px) {
+
 }
