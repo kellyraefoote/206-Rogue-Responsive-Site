@@ -10,13 +10,12 @@ body {
 	flex-flow: row wrap;
 	font-size: 1em;
 	max-width: 1200px;
-	width: 90%;
 }
 
 .container{
 	max-width: 1200px;
 	width: 90%;
-	margin: 0 auto;
+	margin: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -32,6 +31,9 @@ h3 {
 }
 h1 {
 	font-size: 1.875em;
+	border-bottom: #77a466;
+	border-width: 3px;
+	border-bottom-style: solid ;
 }
 h2 {
 	font-size: 1.125em;
@@ -51,7 +53,7 @@ header {
 	height: auto;
 	border-bottom: 3px solid #77a466;
 	max-width: 1200px;
-	width: 90%;
+	width: 100%;
 	flex-flow: row wrap;
 	margin: 0 auto;
 	display: flex;
@@ -61,18 +63,20 @@ header {
 
 header h1 {
 	margin: 0;
-	padding: 38px 0;
+	padding: 25px 0 15px 0;
 }
 header h1 span {
 	color: #77a466;
 }
 
 header nav {
-	padding: 46px 0;
+	padding: 20px 0;
 }
 header nav ul {
 	margin: 0;
 	padding: 0;
+	line-height: 40px;
+	text-align: center;
 }
 header nav ul li {
 	text-transform: uppercase;
@@ -80,10 +84,13 @@ header nav ul li {
 	font-size: 0.875em;
 	padding: 0 10px;
 	display: flex;
+	text-align: center;
+
 }
 header nav ul li a{
 	text-decoration: none;
 	color:#77a466;
+	text-align: center;
 }
 
 /*The widths are in a percentage!*/
@@ -94,7 +101,7 @@ header nav ul li a{
 	justify-content: center ;
 	align-items: center;
 	max-width: 1200px;
-	width: 90%;
+	width: 100%;
 	flex-flow: row wrap;
 }
 
@@ -125,7 +132,7 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 90%;
+	width: 100%;
 	height: auto;
 	border-top: 1px solid #eee;
 	display: wrap;
@@ -135,9 +142,7 @@ header nav ul li a{
 	padding: 10px 0;
 }
 
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
+
 }
 
 .section-two h3,
@@ -158,11 +163,13 @@ header nav ul li a{
 	color: #333;
 	font-size: 1em;
 	line-height: auto;
+	text-align: left;
 }
 
 .address {
 	font-size: 1em;
 	line-height: auto;
+	text-align: left;
 }
 
 /*The widths are in a percentage!*/
@@ -174,7 +181,7 @@ footer {
 	justify-content: center;
 	align-items: center;
 	max-width: 1200px;
-	width: 90%;
+	width: 100%;
 	flex-flow: row wrap;
 }
 footer span {
@@ -185,11 +192,21 @@ footer span {
 }
 
 @media only screen and (min-width 768px){
-
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
 
 }
 
 
 @media only screen and (min-width 1000px) {
 
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+
+	.section-two h3,
+	.section-three h3 {
+		padding: 10px 30px;
+		}
 }
